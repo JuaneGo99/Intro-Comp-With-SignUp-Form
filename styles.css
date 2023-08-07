@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    /* ## Colors
+    ### Primary */
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    /* ### Accent */
+    --Blue: hsl(248, 32%, 49%);
+    /* ### Neutral */
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(images/bg-intro-mobile.png);
+    background-size: cover;
+    background-color: var(--Red);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.main-container{
+    margin: 95px auto 68px;
+    padding: 0 25px;
+}
+
+.lear-container{
+    color: white;
+    text-align: center;
+    height: 235px;
+}
+
+.title h1{
+    margin-bottom: 20px;
+    font-size: 1.95em;
+    line-height: 1.35em;
+}
+
+.paragraph p{
+    font-size: 1.05em;
+    line-height: 1.6em;
+}
+
+.anucio{
+    border: 1px solid white;
+    width: 328px;
+    height: 565px;
+}
+
+.button button{
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 10px;
+}
+
+.free button{
+    background-color: var(--Blue);
+    height: 88px;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 70px 0 25px;
+    box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.2);
+}
+
+.free span{
+    font-weight: 700;
+}
+
+.block-container{
+    background-color: white;
+    /* height: 600px; */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.2);
+}
+
+.group-form input{
+    width: 100%;
+    height: 55px;
+    padding: 10px 20px;
+    border: 1px solid var(--Grayish-Blue);
+    border-radius: 10px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.claim button{
+    background-color: var(--Green);
+    text-transform: uppercase;
+    height: 55px;
+    font-size: 0.95em;
+    font-weight: 600;
+    margin-bottom: 16px;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.3);
+}
+
+.claim button:hover{
+    background-color: var(--Green);
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
+.error-container{
+    position: relative;
+}
+
+.icon-error{
+    position: absolute;
+    right: 25px;
+    top: -45px;
+}
+
+.error-message{
+    color: var(--Red);
+    font-style: italic;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 500;
+    margin: -15px 0 18px;
+}
+
+.services p{
+    color: var(--Grayish-Blue);
+    text-align: center;
+    padding: 0 20px;
+    font-size: 0.7em;
+}
+
+.services span{
+    color: var(--Red);
+    font-weight: 700;
+}
+
+.attribution { 
+    margin: 20px 0;
+    font-size: 11px; 
+    text-align: center; }
+    
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width:1000px){
+    body{
+        background-image: url(images/bg-intro-desktop.png);
+        background-size: cover;
+    }
+    .main-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1122px;
+        height: 560px;
+        margin: 125px auto;
+        padding: 0;
+    }
+    .lear-container{
+        width: 550px;
+        height: 100%;
+        text-align: left;
+        padding: 165px 0;
+    }
+    .title h1{
+        margin-bottom: 25px;
+        font-size: 3.2em;
+        line-height: 1.15em;
+    }
+    .paragraph p{
+        font-size: 1.05em;
+        line-height: 1.65em;
+    }
+    .anuncio{
+        width: 542px;
+        height: 560px;
+        margin-left: 50px;
+    }
+    .button button{
+        padding: 15px 110px;
+    }
+    .free button{
+        height: 60px;
+        font-size: 1.05em;
+        margin: 0 auto 25px;
+    }
+    .block-container{
+        padding: 40px;
+        border-radius: 10px;
+    }
+    .group-form input{
+        padding: 10px 32px;
+        margin-bottom: 20px;
+    }
+    
+    .claim button{
+        font-size: 0.95em;
+        font-weight: 600;
+        margin-bottom: 22px;
+        box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.3);
+    }
+    
+
+}
